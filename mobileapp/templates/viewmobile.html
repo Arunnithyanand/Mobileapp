@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block body_block %}
+<div class="row">
+    <div class="col-4"></div>
+
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="{{mobiles.image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{mobiles.brand}}</li>
+                <li class="list-group-item">{{mobiles.price}}</li>
+                <li class="list-group-item">{{mobiles.os}}</li>
+                <li class="list-group-item">{{mobiles.specs}}</li>
+                <li class="list-group-item">{{mobiles.memory}}</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="col-4"></div>
+</div>
+{% endblock %}
